@@ -2,18 +2,18 @@
 
 
 ## Task Summary
+The complete assessment folder is uploaded on the github and shared via mail.
+The MongoDB database has already been dumped to MongoDB Atlas, so no local setup is required.
+The app will fetch data directly from Atlas.
 
-1. **Login Page**  
-   - Implemented using **Firebase Authentication** (Email & Password).  
-   - Supports sign-in and sign-out functionality.
+Firebase project credentials are configured in the frontend environment.1. **Login Page**  
+   - to create a login page in react i have used firebase inbuilt methods (email and password ) for signin and  singnout.
 
 2. **List Active Customers**  
-   - After login, users are redirected to the **Home Page**, where all active customer details are shown.  
-   - Columns displayed: **Name**, **Address**, and **Accounts**.
+   - after login the user will be redirect home page. on home page teh active customer details will be shown with name , accounts, and address.
 
 3. **Clickable Accounts**  
-   - Each account listed is **clickable**.  
-   - On click, all **transactions** related to that account are displayed.
+   - in teh homepage all the accounts of the cutomer are shown, user can click on this accounts to see the transaction of the same account.
 
 4. **Mongo Queries**  
    - Query to find `account_id`s with at least one transaction below ₹5000.  
@@ -22,14 +22,38 @@
 
 ---
 
-## 📦 Setup Instructions
+##  Setup Instructions
 
 ### 1. Clone or Download
-Clone this repository or download the ZIP file shared via email.
+Clone this repository or download the ZIP file shared through mail.
 
 ### 2. Install Dependencies
-
 #### Backend
 ```bash
 cd backend
 npm install
+```
+```bash
+cd frontend
+npm install
+```
+### 2. Run the Project
+Start Backend Server
+```bash
+cd backend
+npm run dev
+```
+
+
+```bash
+cd frontend
+npm run dev
+```
+### 2. open the Project
+follow the link from the terminal to go to the webpage. or enter below url in browser.
+```bash
+http://localhost:5173/
+```
+
+
+
