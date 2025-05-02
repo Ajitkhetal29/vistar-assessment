@@ -1,0 +1,27 @@
+Q3. Create a mongo query to list down account ids which has made at least one transaction below the amount 5000
+Ans => 
+  db.transactions.find({transactions : {$elemMatch : {amount : {$lt : 5000}}}},{account_id : 1,_id :0})
+
+explaination =>
+
+    - we are quering for account_id  which has made at least one transaction below the amount of 5000.
+    - the collection transaction has this info like  and account_id & transaction and trasaction has property amount.
+    -  here we will use $elemMatch to target a element amount of transaction.
+    - by $lt we are setting the condition that the amount should be lower than 5000.
+    - by providing another object {account_id : 1,_id :0} we are requesting only for the accound_id and not for the transaction _id. here 1 is for true and 0 is for false.
+    - by these query we will get the account_id which has made at least one transaction lower than 5000.
+
+
+
+
+4. Create a mongo query to list down distinct list of products available in the system
+ans => 
+    db.accounts.distinct("products");
+
+    explaination=>
+
+    - we can find the distinct list of products available by running this simple mongo query.
+    - the account collection has product element.
+    - we are targeting accounts collection.
+    - with distinct we will only get the unique products.
+
