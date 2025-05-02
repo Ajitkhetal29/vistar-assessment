@@ -5,8 +5,9 @@
 The complete assessment folder is uploaded on the github and shared via mail.
 The MongoDB database has already been dumped to MongoDB Atlas, so no local setup is required.
 The app will fetch data directly from Atlas.
+Firebase project credentials are configured in the frontend environment.
 
-Firebase project credentials are configured in the frontend environment.1. **Login Page**  
+1. **Login Page**  
    - to create a login page in react i have used firebase inbuilt methods (email and password ) for signin and  singnout.
 
 2. **List Active Customers**  
